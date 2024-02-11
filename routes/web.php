@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\DivisiController;
+use App\Http\Controllers\VisiMisiController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +18,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/Divisi', [DivisiController::class, 'view'])->name('divisi');
+Route::get('/Visi-Misi', [VisiMisiController::class, 'view'])->name('visimisi');
