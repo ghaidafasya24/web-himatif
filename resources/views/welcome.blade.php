@@ -12,19 +12,36 @@
         <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     </head>
     <body class="antialiased">
-        <nav class="border-b-4  p-4">
-            <div class="container mx-auto flex justify-around items-center">
+        <header>
+            <nav class="border-b-4 py-4">
+                <div class="flex items-center justify-between">
                 <!-- Logo -->
-                <a href="#" class="text-stale-800 transition duration:300 text-lg font-bold">HIMATIF</a>
-                    <!-- Navigation Links -->
-                <div class="space-x-5">
-                    <a href="#" class="text-stale-800 hover:opacity-50 transition duration:300">Home</a>
-                    <a href="#" class="text-stale-800 hover:opacity-50 transition duration:300">Visi dan Misi</a>
-                    <a href="#" class="text-stale-800 hover:opacity-50 transition duration:300">Struktur Organisasi</a>
-                    <a href="#" class="text-stale-800 hover:opacity-50 transition duration:300">Divisi</a>
-                    <a href="#" class="text-stale-800 hover:opacity-50 transition duration:300">open recruitment</a>
+                <a href="#" class="text-red-500 transition duration-300 text-lg font-bold flex items-center pl-20">
+                    <img src="assets/img/logo-himatif.png" alt="" class="w-16 mr-4">Himatif
+                </a>
+                <!-- Navigation Links -->
+                <div class="space-x-5 pr-20">
+                    <a href="#" class="text-red-500 font-bold hover:opacity-50 transition duration-300">Home</a>
+                    <a href="#" class="text-red-500 font-bold hover:opacity-50 transition duration-300">News</a>
+                    <a href="#" class="text-red-500 font-bold hover:opacity-50 transition duration-300">Gallery</a>
+                    <a href="#" class="text-red-500 font-bold hover:opacity-50 transition duration-300">Oprec</a>
+                    <a href="#" class="text-red-500 font-bold hover:opacity-50 transition duration-300 mr-10">About Us</a>
                 </div>
             </div>
-        </nav>
+
+            </nav>
+        </header>
+        <main class="py-28 bg-slate-100">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="flex items-center">
+                    <div class="ml-20">
+                        <h1 class="text-red-500 font-bold text-7xl">Himpunan<br>Mahasiswa<br>Teknik Informatika</h1>
+                        <p class="text-red-500">Universitas Logistik & Bisnis Internasional</p>
+                        <button class="transition mt-10 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full transition duration-300 ease-in-out">Join</button>
+                    </div>
+                </div>
+                <img src="assets/img/WhatsApp Image 2024-02-11 at 20.10.53_2b93b189.jpg" alt="" class="w-11/12 rounded-3xl">
+            </div>
+        </main>
     </body>
 </html>
