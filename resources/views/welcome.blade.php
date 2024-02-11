@@ -18,7 +18,7 @@
                         <img src="assets/img/logo-himatif.png" alt="" class="w-16 mr-4">Himatif
                     </a>
                     <!-- Navigation Links -->
-                    <div class="space-x-5 pr-20">
+                    <div class="space-x-10 pr-20">
                         <a href="#" class="text-red-500 font-bold hover:opacity-50 transition duration-300">Home</a>
                         <a href="#" class="text-red-500 font-bold hover:opacity-50 transition duration-300">News</a>
                         <a href="#" class="text-red-500 font-bold hover:opacity-50 transition duration-300">Gallery</a>
