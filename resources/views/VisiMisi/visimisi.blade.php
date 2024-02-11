@@ -1,5 +1,5 @@
 @extends('Partials.layout')
-@section('title', 'Himpunan web')
+@section('title', 'Visi-Misi Himpunan')
 @section('content')
 
     <p>ppp</p>
