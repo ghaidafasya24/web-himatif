@@ -11,25 +11,24 @@
     </head>
     <body class="antialiased">
         <header>
-            <nav class="border-b-4 py-4">
+            <nav class="fixed top-0 z-10 w-full border-b-4 py-4 bg-white">
                 <div class="flex items-center justify-between">
                 <!-- Logo -->
-                <a href="#" class="text-red-500 transition duration-300 text-lg font-bold flex items-center pl-20">
-                    <img src="assets/img/logo-himatif.png" alt="" class="w-16 mr-4">Himatif
-                </a>
-                <!-- Navigation Links -->
-                <div class="space-x-5 pr-20">
-                    <a href="#" class="text-red-500 font-bold hover:opacity-50 transition duration-300">Home</a>
-                    <a href="#" class="text-red-500 font-bold hover:opacity-50 transition duration-300">News</a>
-                    <a href="#" class="text-red-500 font-bold hover:opacity-50 transition duration-300">Gallery</a>
-                    <a href="#" class="text-red-500 font-bold hover:opacity-50 transition duration-300">Oprec</a>
-                    <a href="#" class="text-red-500 font-bold hover:opacity-50 transition duration-300 mr-10">About Us</a>
+                    <a href="#" class="text-red-500 transition duration-300 text-lg font-bold flex items-center pl-20">
+                        <img src="assets/img/logo-himatif.png" alt="" class="w-16 mr-4">Himatif
+                    </a>
+                    <!-- Navigation Links -->
+                    <div class="space-x-5 pr-20">
+                        <a href="#" class="text-red-500 font-bold hover:opacity-50 transition duration-300">Home</a>
+                        <a href="#" class="text-red-500 font-bold hover:opacity-50 transition duration-300">News</a>
+                        <a href="#" class="text-red-500 font-bold hover:opacity-50 transition duration-300">Gallery</a>
+                        <a href="#" class="text-red-500 font-bold hover:opacity-50 transition duration-300">Oprec</a>
+                        <a href="#" class="text-red-500 font-bold hover:opacity-50 transition duration-300 mr-10">About Us</a>
+                    </div>
                 </div>
-            </div>
-
             </nav>
         </header>
-        <main class="py-28 bg-slate-100">
+        <main class="py-48 bg-slate-100">
             <div class="grid grid-cols-2 gap-4">
                 <div class="flex items-center">
                     <div class="ml-20">
