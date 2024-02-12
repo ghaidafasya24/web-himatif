@@ -45,7 +45,7 @@
                 </div>
                 <div class="px-20 mt-16">
                     <h5 class="text-center mb-6 text-xl font-semibold">Misi</h5>
-                    <ol>
+                    <ol class="list-decimal">
                         <li>Menghasilkan Tenaga Professional di bidang teknologi informasi dan Komunikasi (TIK)</li>
                         <li>Menerapkan ilmu pengetahuan dan TIK yang relevan dengan peningkatan layanan TIK di industri
                             logistik</li>
