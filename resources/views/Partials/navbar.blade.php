@@ -1,17 +1,23 @@
 {{-- Navbar  --}}
-<nav class="border-b-4  p-4">
-    <div class="container mx-auto flex justify-around items-center">
-        <!-- Logo -->
-        <a href="#" class="text-stale-800 transition duration:300 text-lg font-bold">HIMATIF</a>
-        <!-- Navigation Links -->
-        <div class="space-x-5">
-            <a href="{{ url('/') }}" class="text-stale-800 hover:opacity-50 transition duration:300">Home</a>
-            <a href="{{ route('visimisi') }}" class="text-stale-800 hover:opacity-50 transition duration:300">Visi dan Misi</a>
-            <a href="#" class="text-stale-800 hover:opacity-50 transition duration:300">Struktur Organisasi</a>
-            <a href="{{ route('divisi') }}" class="text-stale-800 hover:opacity-50 transition duration:300">Divisi</a>
-            <a href="#" class="text-stale-800 hover:opacity-50 transition duration:300">open recruitment</a>
+<header>
+    <nav class="fixed top-0 z-10 w-full border-b-4 py-4 bg-white">
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="text-red-500 transition duration-300 text-lg font-bold flex items-center pl-20">
+                <img src="assets/img/logo-himatif.png" alt="" class="w-16 mr-4">Himatif
+            </a>
+            <!-- Navigation Links -->
+            <div class="space-x-10 pr-20">
+                <a href="{{ url('/') }}" class="text-red-500 font-bold hover:opacity-50 transition duration-300">Home</a>
+                <a href="{{ route('news') }}"
+                    class="text-red-500 font-bold hover:opacity-50 transition duration-300">News</a>
+                <a href="#" class="text-red-500 font-bold hover:opacity-50 transition duration-300">Gallery</a>
+                <a href="#" class="text-red-500 font-bold hover:opacity-50 transition duration-300">Oprec</a>
+                <a href="#" class="text-red-500 font-bold hover:opacity-50 transition duration-300 mr-10">About
+                    Us</a>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
+</header>
 
 {{-- Navbar end  --}}
