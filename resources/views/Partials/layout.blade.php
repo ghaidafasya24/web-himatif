@@ -18,6 +18,7 @@
 
     @yield('content')
     @include('Partials.navbar')
+    @include('Partials.footer')
 
 </body>
 
