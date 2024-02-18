@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DivisiController;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\VisiMisiController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,3 +22,4 @@ Route::get('/', function () {
 });
 
 Route::get('/News', [NewsController::class, 'viewNews'])->name('news');;
+Route::get('/Gallery', [GalleryController::class, 'viewGallery'])->name('gallery');;

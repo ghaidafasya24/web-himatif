@@ -9,12 +9,10 @@
             <!-- Navigation Links -->
             <div class="space-x-10 pr-20">
                 <a href="{{ url('/') }}" class="text-red-500 font-bold hover:opacity-50 transition duration-300">Home</a>
-                <a href="{{ route('news') }}"
-                    class="text-red-500 font-bold hover:opacity-50 transition duration-300">News</a>
-                <a href="#" class="text-red-500 font-bold hover:opacity-50 transition duration-300">Gallery</a>
+                <a href="{{ route('news') }}" class="text-red-500 font-bold hover:opacity-50 transition duration-300">News</a>
+                <a href="{{ route('gallery') }}" class="text-red-500 font-bold hover:opacity-50 transition duration-300">Gallery</a>
                 <a href="#" class="text-red-500 font-bold hover:opacity-50 transition duration-300">Oprec</a>
-                <a href="#" class="text-red-500 font-bold hover:opacity-50 transition duration-300 mr-10">About
-                    Us</a>
+                <a href="#" class="text-red-500 font-bold hover:opacity-50 transition duration-300 mr-10">About Us</a>
             </div>
         </div>
     </nav>
