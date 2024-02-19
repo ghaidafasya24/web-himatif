@@ -8,6 +8,6 @@ use Spatie\FlareClient\View;
 class GalleryController extends Controller
 {
     public function viewGallery(){
-        return view('Gallery.gallery');
+        return view('Gallery.angkatan');
     }
 }
