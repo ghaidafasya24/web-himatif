@@ -7,7 +7,19 @@ use Spatie\FlareClient\View;
 
 class GalleryController extends Controller
 {
-    public function viewGallery(){
+    // function untuk menampilkan menu angkatan pada gallery
+    public function viewAngkatan(){
         return view('Gallery.angkatan');
     }
+
+    // function untuk menampilkan menu bebas angkatan pada gallery
+    public function viewBebas(){
+        return view('Gallery.bebas');
+    }
+
+    // function untuk menampilkan menu proker pada gallery
+    public function viewProker(){
+        return view('Gallery.proker');
+    }
+
 }

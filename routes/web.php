@@ -21,5 +21,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/News', [NewsController::class, 'viewNews'])->name('news');;
-Route::get('/Gallery', [GalleryController::class, 'viewGallery'])->name('gallery');;
+Route::get('/News', [NewsController::class, 'viewNews'])->name('news');
+Route::get('/Angkatan', [GalleryController::class, 'viewAngkatan'])->name('angkatan');
+Route::get('/Random', [GalleryController::class, 'viewBebas'])->name('bebas');
+Route::get('/ProgramKerja', [GalleryController::class, 'viewProker'])->name('proker');
