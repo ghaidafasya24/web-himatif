@@ -4,6 +4,7 @@ use App\Http\Controllers\DivisiController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\VisiMisiController;
+use App\Http\Controllers\OprecController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,3 +26,4 @@ Route::get('/News', [NewsController::class, 'viewNews'])->name('news');
 Route::get('/Angkatan', [GalleryController::class, 'viewAngkatan'])->name('angkatan');
 Route::get('/Random', [GalleryController::class, 'viewBebas'])->name('bebas');
 Route::get('/ProgramKerja', [GalleryController::class, 'viewProker'])->name('proker');
+Route::get('/Oprec', [OprecController::class, 'viewOprec'])->name('oprac');
