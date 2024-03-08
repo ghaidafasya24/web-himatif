@@ -3,8 +3,10 @@
 use App\Http\Controllers\DivisiController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\VisiMisiController;
 use App\Http\Controllers\OprecController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Auth::routes();
 
 Route::get('/', function () {
     return view('welcome');
@@ -27,3 +30,6 @@ Route::get('/Angkatan', [GalleryController::class, 'viewAngkatan'])->name('angka
 Route::get('/Random', [GalleryController::class, 'viewBebas'])->name('bebas');
 Route::get('/ProgramKerja', [GalleryController::class, 'viewProker'])->name('proker');
 Route::get('/Oprec', [OprecController::class, 'viewOprec'])->name('oprac');
+// Route::get('/Login', [LoginController::class, 'login'])->name('login');
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
