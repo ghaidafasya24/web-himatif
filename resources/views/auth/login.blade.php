@@ -7,8 +7,8 @@
             <div>
                 <a href="https://www.instagram.com/himatif.ulbi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                     <h2 class="font-bold text-3xl">
-                        U-
-                        <span class="bg-[#f84525] text-white px-2 rounded-md">Vote</span>
+                        Web-
+                        <span class="bg-[#f84525] text-white px-2 rounded-md">Hima</span>
                     </h2>
                 </a>
             </div>
