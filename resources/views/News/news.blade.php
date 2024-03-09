@@ -6,7 +6,7 @@
     <section class="pt-28">
         <div class="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
             <div href="#" class="max-w-sm gap-3 mx-auto sm:max-w-full group xl:grid xl:grid-cols-12 bg-slate-100">
-                <img src="z480x360" alt="" class="object-cover w-full h-64 rounded sm:h-96 xl:col-span-7">
+                <img src="https://source.unsplash.com/random/480x360?" alt="" class="object-cover w-full h-64 rounded sm:h-96 xl:col-span-7">
                 <div class="p-6 space-y-2 xl:col-span-5">
                     <a href="">
                         <h3 class="text-2xl font-semibold sm:text-4xl hover:underline focus:underline">Lorem ipsum dolor sit amet.</h3>
