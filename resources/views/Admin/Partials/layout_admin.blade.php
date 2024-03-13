@@ -20,6 +20,7 @@
 
     @yield('content')
     @include('Admin.Partials.navbar_admin')
+    @include('Admin.Partials.sidebar_admin')
    
 
 </body>

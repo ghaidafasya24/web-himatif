@@ -39,3 +39,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 // ADMIN
 Route::get('/DashboardAdmin', [DashboardController::class, 'viewDashboard'])->name('dashboard');
+Route::get('/DataDivisi', [DivisiController::class, 'viewdivisi'])->name('datadivisi');
