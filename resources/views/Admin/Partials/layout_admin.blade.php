@@ -24,28 +24,6 @@
     @include('Admin.Partials.sidebar_admin')
 
     <script>
-        // start: Sidebar
-        const sidebarToggle = document.querySelector('.sidebar-toggle')
-        const sidebarOverlay = document.querySelector('.sidebar-overlay')
-        const sidebarMenu = document.querySelector('.sidebar-menu')
-        const main = document.querySelector('.main')
-        if (window.innerWidth < 768) {
-            main.classList.toggle('active')
-            sidebarOverlay.classList.toggle('hidden')
-            sidebarMenu.classList.toggle('-translate-x-full')
-        }
-        sidebarToggle.addEventListener('click', function(e) {
-            e.preventDefault()
-            main.classList.toggle('active')
-            sidebarOverlay.classList.toggle('hidden')
-            sidebarMenu.classList.toggle('-translate-x-full')
-        })
-        sidebarOverlay.addEventListener('click', function(e) {
-            e.preventDefault()
-            main.classList.add('active')
-            sidebarOverlay.classList.add('hidden')
-            sidebarMenu.classList.add('-translate-x-full')
-        })
         document.querySelectorAll('.sidebar-dropdown-toggle').forEach(function(item) {
             item.addEventListener('click', function(e) {
                 e.preventDefault()
@@ -60,10 +38,15 @@
                 }
             })
         })
-        // end: Sidebar
+        const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+        dropdownToggles.forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                const dropdownMenu = this.nextElementSibling;
+                dropdownMenu.classList.toggle('hidden');
+            });
+        });
     </script>
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
 </body>
 
 </html>
