@@ -1,6 +1,4 @@
-@extends('auth.layout')
-@section('title', 'navbar_admin')
-@section('content')
+
 
 <nav class="w-full md:w-[calc(100%-256px)] md:ml-64 bg-gray-50 min-h-screen transition-all main">
     <div class="py-2 px-6 bg-white flex items-center shadow-md shadow-black/5 sticky top-0 left-0 z-30">
