@@ -1,4 +1,4 @@
 @extends('Admin.Partials.layout_admin')
-@section('title', 'Data Anggota')
+@section('title', 'Data Berita Acara')
 @section('content')
 

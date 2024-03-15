@@ -2,9 +2,11 @@
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DivisiController;
+use App\Http\Controllers\DocsController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\MahasiswaController;
 use App\Http\Controllers\VisiMisiController;
 use App\Http\Controllers\OprecController;
 use Illuminate\Support\Facades\Auth;
@@ -21,6 +23,7 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
 Auth::routes();
 
 Route::get('/', function () {
@@ -39,4 +42,17 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 // ADMIN
 Route::get('/DashboardAdmin', [DashboardController::class, 'viewDashboard'])->name('dashboard');
-Route::get('/DataDivisi', [DivisiController::class, 'viewdivisi'])->name('datadivisi');
+
+// DOCS 
+Route::get('/DataDokumentasiMateri', [DocsController::class, 'viewDokumentasiMateri'])->name('datadokmateri');
+Route::get('/DataGallery', [DocsController::class, 'viewGallery'])->name('gallery');
+
+// NEWS 
+Route::get('/DataBeritaAcara', [NewsController::class, 'viewBeritaAcara'])->name('databeritaacara');
+Route::get('/DataBeritaKegiatan', [NewsController::class, 'viewBeritaKegiatan'])->name('databeritakegiatan');
+Route::get('/DataEvent', [NewsController::class, 'viewEvent'])->name('dataevent');
+
+// MAHASISWA
+Route::get('/DataAnggotaHimpunan', [MahasiswaController::class, 'viewDataOprec'])->name('dataoprec');
+Route::get('/DataOpenRequitment', [MahasiswaController::class, 'viewDataAnggota'])->name('dataanggota');
+// Route::get('/DataDivisi', [DivisiController::class, 'viewdivisi'])->name('datadivisi');
