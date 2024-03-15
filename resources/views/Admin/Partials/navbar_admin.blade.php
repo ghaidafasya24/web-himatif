@@ -21,7 +21,7 @@
                             class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Profile</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="{{ url('/') }}"
                             class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Logout</a>
                     </li>
                 </ul>
