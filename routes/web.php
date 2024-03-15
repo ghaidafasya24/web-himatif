@@ -53,6 +53,6 @@ Route::get('/DataBeritaKegiatan', [NewsController::class, 'viewBeritaKegiatan'])
 Route::get('/DataEvent', [NewsController::class, 'viewEvent'])->name('dataevent');
 
 // MAHASISWA
-Route::get('/DataAnggotaHimpunan', [MahasiswaController::class, 'viewDataOprec'])->name('dataoprec');
-Route::get('/DataOpenRequitment', [MahasiswaController::class, 'viewDataAnggota'])->name('dataanggota');
+Route::get('/DataAnggotaHimpunan', [MahasiswaController::class, 'viewDataAnggota'])->name('dataanggota');
+Route::get('/DataOpenRequitment', [MahasiswaController::class, 'viewDataOprec'])->name('dataoprec');
 // Route::get('/DataDivisi', [DivisiController::class, 'viewdivisi'])->name('datadivisi');
