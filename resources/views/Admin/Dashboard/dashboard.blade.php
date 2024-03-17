@@ -17,21 +17,21 @@
             <div class="p-5 flex bg-white rounded-2xl mb-5 lg:mb-[-20px]">
                 <i class="bi bi-wallet text-white border p-4 rounded-xl bg-blue-800 border-blue-800"></i>
                 <div class="ml-3 mr-16">
-                    <h1>Anggota</h1>
-                    <h2>50 orang</h2>
+                    <h1>Berita Kegiatan</h1>
+                    <h2>2</h2>
                 </div>
             </div>
             <div class="p-5 flex bg-white rounded-2xl mb-5 lg:mb-[-20px]">
                 <i class="bi bi-phone text-white border p-4 rounded-xl bg-blue-500 border-blue-500"></i>
                 <div class="ml-3 mr-16">
-                    <h1>Berita</h1>
-                    <h2>19</h2>
+                    <h1>Berita Acara</h1>
+                    <h2>4</h2>
                 </div>
             </div>
             <div class="p-5 flex bg-white rounded-2xl mb-5 lg:mb-[-20px]">
                 <i class="bi bi-envelope-fill text-white border p-4 rounded-xl bg-green-600 border-grebg-green-600"></i>
                 <div class="ml-3 mr-16">
-                    <h1>Gallery</h1>
+                    <h1>Event</h1>
                     <h2>10</h2>
                 </div>
             </div>
@@ -39,10 +39,35 @@
                 <i
                     class="bi bi-person-lines-fill text-white border p-4 rounded-xl bg-purple-500 border-purpbg-purple-500"></i>
                 <div class="ml-3 mr-16">
-                    <h1>Oprec</h1>
-                    <h2>15</h2>
+                    <h1>Gallery</h1>
+                    <h2>2</h2>
                 </div>
             </div>
+        </div>
+        <br><br>
+        <div class="lg:ml-[250px] lg:flex justify-around mt-[-40px] p-5">
+            <div class="p-5 flex bg-white rounded-2xl mb-5 lg:mb-[-20px]">
+                <i class="bi bi-wallet text-white border p-4 rounded-xl bg-blue-800 border-blue-800"></i>
+                <div class="ml-3 mr-10">
+                    <h1>Dokumentasi Materi</h1>
+                    <h2>5</h2>
+                </div>
+            </div>
+            <div class="p-5 flex bg-white rounded-2xl mb-5 lg:mb-[-20px]">
+                <i class="bi bi-phone text-white border p-4 rounded-xl bg-blue-500 border-blue-500"></i>
+                <div class="ml-3 mr-16">
+                    <h1>Open Requitment</h1>
+                    <h2>19 Orang</h2>
+                </div>
+            </div>
+            <div class="p-5 flex bg-white rounded-2xl mb-5 lg:mb-[-20px]">
+                <i class="bi bi-envelope-fill text-white border p-4 rounded-xl bg-green-600 border-grebg-green-600"></i>
+                <div class="ml-3 mr-16">
+                    <h1>Anggota Himpunan</h1>
+                    <h2>32 Orang</h2>
+                </div>
+            </div>
+
         </div>
     </section>
 @endsection
