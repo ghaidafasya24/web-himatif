@@ -9,7 +9,7 @@
                 <div class="ml-20">
                     <h1 class="text-red-500 font-bold text-7xl">Himpunan<br>Mahasiswa<br>Teknik Informatika</h1>
                     <p class="text-red-500">Universitas Logistik & Bisnis Internasional</p>
-                    <button
+                    <button onclick="return window.location.href = '{{ route('oprac') }}'"
                         class="transition mt-10 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full transition duration-300 ease-in-out">Join</button>
                 </div>
             </div>
@@ -22,9 +22,10 @@
             </div>
             <div class="flex items-center">
                 <div class="mr-20">
-                    <p class="font-bold">Himatif Ulbi</p>
-                    <h1 class="mt-4 font-bold text-5xl">Himpunan Mahasiswa<br>Teknik Informatika Ulbi</h1>
-                    <p class="mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident hic sunt labore
+                    <p class="font-bold">Himatif ULBI</p>
+                    <h1 class="mt-4 font-bold text-5xl">Himpunan Mahasiswa<br>Teknik Informatika</h1>
+                    <p class="mt-10 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident hic
+                        sunt labore
                         nostrum dicta, quibusdam itaque ipsam. Ad itaque aliquid aperiam iure similique, vitae architecto
                         placeat, hic cumque earum asperiores perspiciatis labore, dolore odit quam a dolores expedita eius?
                         Delectus eos autem vero aperiam, nostrum placeat quaerat dignissimos deleniti molestiae! Eaque quas
@@ -40,17 +41,39 @@
             <div class="grid grid-cols-2 gap-4">
                 <div class="text-center px-20 mt-16">
                     <h5 class="text-center mb-6 text-xl font-semibold">Visi</h5>
-                    <p>Menjadi program studi yang unggul secara nasional di bidang teknologi informasi yang mendukung bidang
-                        logistik dan manajemen rantai pasok pada tahun 2020</p>
+                    <p class="text-justify">Menjadikan himpunan mahasiswa teknik informatika sebagai wadah yang inspiratif,
+                        proaktif, dan inklusif untuk
+                        mengembangkan potensi mahasiswa teknik informatika serta mendorong inovasi dan kolaborasi
+                        didalamnya.
+                    </p>
                 </div>
                 <div class="px-20 mt-16">
                     <h5 class="text-center mb-6 text-xl font-semibold">Misi</h5>
-                    <ol class="list-decimal">
-                        <li>Menghasilkan Tenaga Professional di bidang teknologi informasi dan Komunikasi (TIK)</li>
-                        <li>Menerapkan ilmu pengetahuan dan TIK yang relevan dengan peningkatan layanan TIK di industri
-                            logistik</li>
-                        <li>Melakukan pengabdian kepada masyarakat untuk memenuhi kebutuhan industrialisasi dan meningkatkan
-                            kesejahteraan masyarakat dengan pembekalan ilmu pengetahuan dan teknologi</li>
+                    <ol class="list-decimal text-justify">
+                        <li>
+                            Mendorong pengembangan keterampilan teknis dan soft skills mahasiswa melalui workshop, seminar,
+                            dan kegiatan
+                            pembelajaran berbasis proyek
+                        </li>
+                        <li>
+                            Memperkuat jaringan kerjasama antar anggota himpunan, alumni, dan stakeholder industri guna
+                            memfasilitasi peluang magang, kerjasama riset,
+                            dan pengembangan karir.
+                        </li>
+                        <li>
+                            Menyelenggarakan acara dan kompetisi berkualitas tinggi yang mengacu kreativitas, inovasi, dan
+                            prestasi mahasiswa teknik informatika
+                        </li>
+                        <li>
+                            Menyediakan layanan dan dukungan yang komprehensif bagi mahasiswa, termasuk bimbingan akademis,
+                            konseling, dan akses informasi terkini terkait
+                            dunia teknologi informasi
+                        </li>
+                        <li>
+                            Mewujudkan lingkungan himpunan yang inlusif, ramah, dan berbasis kekeluargaan guna meningkatkan
+                            rasa kepemilikan dan partisipasi anggota
+                            dalam berbagai kegiatan
+                        </li>
                     </ol>
                 </div>
             </div>
