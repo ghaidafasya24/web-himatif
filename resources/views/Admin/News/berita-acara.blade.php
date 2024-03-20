@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="overflow-x-hidden md:w-[calc(100%-256px)] md:ml-64 mt-16 w-full">
-        <div class="flex justify-end mr-10">
+        <div class="flex ml-10">
             <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Add Berita</button>
         </div>
         <table class="table-auto min-w-full divide-y divide-gray-200 overflow-x-hidden">

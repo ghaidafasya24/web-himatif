@@ -2,64 +2,46 @@
 @section('title', 'Data Dokumentasi Materi')
 @section('content')
 
-    <div class="overflow-x-hidden md:w-[calc(100%-256px)] md:ml-64 mt-16 w-full">
-        <div class="flex justify-end mb-4 mr-10">
-            <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Add Gambar</button>
-        </div>
-        <table class="table-auto min-w-full divide-y divide-gray-200 overflow-x-hidden">
-            <thead class="bg-gray-50">
-                <tr>
-                    <th scope="col"
-                        class="px-10 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Gambar</th>
-                    <th scope="col"
-                        class="px-10 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Judul Gambar
-                    </th>
-                    <th scope="col"
-                        class="px-10 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Judul Materi
-                    </th>
-                    <th scope="col"
-                        class="px-10 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Deskripsi
-                    </th>
-                    <th scope="col"
-                        class="px-10 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Aksi</th>
-                </tr>
-            </thead>
-            <tbody class="bg-white divide-y divide-gray-200">
-                <tr>
-                    <td class="px-10 py-2 whitespace-nowrap"><img src="https://source.unsplash.com/160x160/?random"
-                            alt="Gambar 1" class="h-16 w-16 object-cover rounded"></td>
-                    <td class="px-10 py-2 whitespace-nowrap">Judul Gambar 1</td>
-                    <td class="px-10 py-2 whitespace-nowrap">Judul Materi 1</td>
-                    <td class="px-10 py-2 whitespace-nowrap">Deskripsi Gambar 1</td>
-                    <td class="px-10 py-2 whitespace-nowrap">
-                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Edit</button>
-                        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Delete</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="px-10 py-2 whitespace-nowrap"><img src="https://source.unsplash.com/160x160/?random"
-                            alt="Gambar 2" class="h-16 w-16 object-cover rounded"></td>
-                    <td class="px-10 py-2 whitespace-nowrap">Judul Gambar 2</td>
-                    <td class="px-10 py-2 whitespace-nowrap">Judul Materi 2</td>
-                    <td class="px-10 py-2 whitespace-nowrap">Deskripsi Gambar 2</td>
-                    <td class="px-10 py-2 whitespace-nowrap">
-                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Edit</button>
-                        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Delete</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="px-10 py-2 whitespace-nowrap"><img src="https://source.unsplash.com/160x160/?random"
-                            alt="Gambar 3" class="h-16 w-16 object-cover rounded"></td>
-                    <td class="px-10 py-2 whitespace-nowrap">Judul Gambar 3</td>
-                    <td class="px-10 py-2 whitespace-nowrap">Judul Materi 3</td>
-                    <td class="px-10 py-2 whitespace-nowrap">Deskripsi Gambar 3</td>
-                    <td class="px-10 py-2 whitespace-nowrap">
-                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Edit</button>
-                        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Delete</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+<div class="overflow-x-hidden md:w-[calc(100%-256px)] md:ml-64 mt-16 w-full">
+    <div class="flex items-center justify-between mb-4 mr-10 ml-10">
+        <h1 class="font-semibold text-xl">Dokumentasi Materi</h1>
+        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Add Gambar</button>
     </div>
+    <div class="ml-4 mr-4">
+        <div class="grid grid-cols-3 gap-4">
+            <div class="p-4 bg-white rounded-lg shadow-xl flex flex-col">
+                <img class="fa-solid fa-comment text-gray-500 dark:text-gray-400 text-4xl mb-4 rounded-md" src="https://source.unsplash.com/random/480x360?" alt="berita"></img>
+                <h2 class="text-xl font-bold mb-2">Berita Acara Title</h2>
+                <p>Description</p>
+                <div class="mt-4 flex justify-evenly">
+                    <a href="" class="bg-blue-500 text-white font-semibold py-2 px-4 border border-blue-500 rounded-lg shadow">Detail</a>
+                    <a href="" class="bg-yellow-500 text-white font-semibold py-2 px-4 border border-yellow-500 rounded-lg shadow">Edit</a>
+                    <a href="" class="bg-red-500 text-white font-semibold py-2 px-4 border border-red-500 rounded-lg shadow">Delete</a>
+                </div>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow-xl flex flex-col">
+                <img class="fa-solid fa-comment text-gray-500 dark:text-gray-400 text-4xl mb-4 rounded-md" src="https://source.unsplash.com/random/480x360?" alt="berita"></img>
+                <h2 class=" text-xl font-bold mb-2">Berita Acara Title</h2>
+                <p>Description</p>
+                <div class="mt-4 flex justify-evenly">
+                    <a href="" class="bg-blue-500 text-white font-semibold py-2 px-4 border border-blue-500 rounded-lg shadow">Detail</a>
+                    <a href="" class="bg-yellow-500 text-white font-semibold py-2 px-4 border border-yellow-500 rounded-lg shadow">Edit</a>
+                    <a href="" class="bg-red-500 text-white font-semibold py-2 px-4 border border-red-500 rounded-lg shadow">Delete</a>
+                </div>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow-xl flex flex-col">
+                <img class="fa-solid fa-comment text-gray-500 dark:text-gray-400 text-4xl mb-4 rounded-md" src="https://source.unsplash.com/random/480x360?" alt="berita"></img>
+                <h2 class="text-xl font-bold mb-2">Berita Acara Title</h2>
+                <p>Description</p>
+                <div class="mt-4 flex justify-evenly">
+                    <a href="" class="bg-blue-500 text-white font-semibold py-2 px-4 border border-blue-500 rounded-lg shadow">Detail</a>
+                    <a href="" class="bg-yellow-500 text-white font-semibold py-2 px-4 border border-yellow-500 rounded-lg shadow">Edit</a>
+                    <a href="" class="bg-red-500 text-white font-semibold py-2 px-4 border border-red-500 rounded-lg shadow">Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
 
 @endsection
