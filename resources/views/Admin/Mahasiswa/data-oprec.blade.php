@@ -26,8 +26,8 @@
                 <td class="px-6 py-4 whitespace-nowrap">Teknik Informatika</td>
                 <td class="px-6 py-4 whitespace-nowrap">Devteam</td>
                 <td class="px-6 py-4 whitespace-nowrap">
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Edit</button>
-                    <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Delete</button>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><i class="mr-1 fa-solid fa-pen-to-square"></i>Edit</button>
+                    <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"><i class="mr-1 fa-solid fa-trash"></i>Delete</button>
                 </td>
             </tr>
             <tr>
@@ -37,8 +37,8 @@
                 <td class="px-6 py-4 whitespace-nowrap">Manajemen Bisnis</td>
                 <td class="px-6 py-4 whitespace-nowrap">EO</td>
                 <td class="px-6 py-4 whitespace-nowrap">
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Edit</button>
-                    <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Delete</button>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><i class="mr-1 fa-solid fa-pen-to-square"></i>Edit</button>
+                    <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"><i class="mr-1 fa-solid fa-trash"></i>Delete</button>
                 </td>
             </tr>
             <tr>
@@ -48,8 +48,8 @@
                 <td class="px-6 py-4 whitespace-nowrap">Manajemen Bisnis</td>
                 <td class="px-6 py-4 whitespace-nowrap">EO</td>
                 <td class="px-6 py-4 whitespace-nowrap">
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Edit</button>
-                    <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Delete</button>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><i class="mr-1 fa-solid fa-pen-to-square"></i>Edit</button>
+                    <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"><i class="mr-1 fa-solid fa-trash"></i>Delete</button>
                 </td>
             </tr>
             <tr>
@@ -59,8 +59,8 @@
                 <td class="px-6 py-4 whitespace-nowrap">Manajemen Bisnis</td>
                 <td class="px-6 py-4 whitespace-nowrap">EO</td>
                 <td class="px-6 py-4 whitespace-nowrap">
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Edit</button>
-                    <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Delete</button>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><i class="mr-1 fa-solid fa-pen-to-square"></i>Edit</button>
+                    <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"><i class="mr-1 fa-solid fa-trash"></i>Delete</button>
                 </td>
             </tr>
         </tbody>

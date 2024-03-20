@@ -12,6 +12,13 @@
         </span>
         <input type="text" class="rounded-none rounded-e-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-gray-500 focus:border-gray-500 block flex-1 min-w-0 w-full text-sm p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500" placeholder="Nama Lengkap">
     </div>
+    <label class="mt-2 block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nomor Telepon</label>
+    <div class="flex">
+        <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-e-0 border-gray-300 rounded-s-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
+            <i class="fa-solid fa-phone text-gray-500 dark:text-gray-400"></i>
+        </span>
+        <input type="number" class="rounded-none rounded-e-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-gray-500 focus:border-gray-500 block flex-1 min-w-0 w-full text-sm p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500" placeholder="Nomor Telepon">
+    </div>
     <div class="flex pt-2">
         <div class="w-full pr-2">
             <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white flex items-center">NPM</label>
@@ -22,7 +29,7 @@
                         <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z" />
                     </svg>
                 </span>
-                <input type="text" class="rounded-none rounded-e-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-gray-500 focus:border-gray-500 block flex-1 min-w-0 w-full text-sm p-2.5 pr-6 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500" placeholder="NPM">
+                <input type="number" class="rounded-none rounded-e-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-gray-500 focus:border-gray-500 block flex-1 min-w-0 w-full text-sm p-2.5 pr-6 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500" placeholder="NPM">
             </div>
         </div>
         <div class="w-full pl-2">
@@ -38,9 +45,17 @@
             </div>
         </div>
     </div>
+    <label class="block mt-3 text-sm font-medium text-gray-900 dark:text-white">Alasan Masuk Himatif</label>
+    <div class="flex">
+        <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-e-0 border-gray-300 rounded-s-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
+            <i class="fa-solid fa-comment text-gray-500 dark:text-gray-400 scale-x-[-1]"></i>
+        </span>
+        <input type="text" class="rounded-none rounded-e-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-gray-500 focus:border-gray-500 block flex-1 min-w-0 w-full text-sm p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500" placeholder="Alasan Masuk Himatif">
+    </div>
     <div class="mb-4 mt-4">
         <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pilih Divisi</label>
         <select id="division-select" class="border p-2 rounded-md w-full border-gray-300 focus:border-gray-500 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-gray-500 dark:focus:border-gray-500">
+            <option class="py-2" disabled selected>Pilih Divisi</option>
             <option value="inti" class="py-2">Inti</option>
             <option value="humas" class="py-2">Humas</option>
             <option value="eo" class="py-2">EO</option>
@@ -64,7 +79,7 @@
     </div>
     <div class="mt-4 flex justify-end">
         <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded-xl shadow">
-        Submit
+            Submit
         </button>
     </div>
 </form>
