@@ -78,14 +78,14 @@
                     <label for="username" class="block text-gray-600">NPM</label>
                     <input type="text" id="username" name="npm"
                         class="w-full lg:w-36 border border-gray-300 rounded-md py-3 px-4 focus:outline-none focus:border-blue-500"
-                        autocomplete="off">
+                        autocomplete="off" placeholder="NPM">
                 </div>
                 <!-- Password Input -->
                 <div class="mb-6">
                     <label for="password" class="block text-gray-600">Password</label>
                     <input type="password" id="password" name="password"
                         class="w-full lg:w-36 border border-gray-300 rounded-md py-3 px-4 focus:outline-none focus:border-blue-500"
-                        autocomplete="off">
+                        autocomplete="off" placeholder="Password">
                 </div>
                 <!-- Remember Me Checkbox -->
                 <div class="mb-4 flex items-center">
