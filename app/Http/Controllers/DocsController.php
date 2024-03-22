@@ -41,7 +41,7 @@ class DocsController extends Controller
 
     public function viewDetailGallery()
     {
-        return view('Admin.Docs.Gallery.edit');
+        return view('Admin.Docs.Gallery.detail');
     }
 
     public function postTambahGallery(Request $request)

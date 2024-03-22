@@ -16,28 +16,28 @@
                 <label class="block uppercase tracking-wide text-gray-700 text-xl font-bold mb-2" for="grid-password">
                     Judul Gallery
                 </label>
-                <input
+                <input name="judul_gallery"
                     class="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
             </div>
             <div class="relative w-full">
                 <label class="block uppercase tracking-wide text-gray-700 text-xl font-bold mb-2" for="deskripsi">
                     Deskripsi
                 </label>
-                <textarea id="deskripsi"
+                <textarea name="deskripsi" id="deskripsi"
                     class="resize-none appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"></textarea>
             </div>
             <div class="relative w-full">
                 <label class="block uppercase tracking-wide text-gray-700 text-xl font-bold mb-2" for="grid-password">
                     Tanggal Publish
                 </label>
-                <input type="date" id="date"
+                <input name="tanggal_publish" type="date" id="date"
                     class="hb-32 appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
             </div>
             <div class="relative w-full">
                 <label class="block uppercase tracking-wide text-gray-700 text-xl font-bold mb-2" for="grid-password">
                     Gambar
                 </label>
-                <input
+                <input name="gambar"
                     class="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                     id="file_input" type="file">
             </div>
@@ -47,8 +47,8 @@
                     Back
                 </button>
                 <button
-                    class="bg-yellow-400 hover:opacity-80 border-transparant font-semibold py-2 px-10 transition rounded shadow">
-                    Edit
+                    class="bg-green-400 hover:opacity-80 border-transparant font-semibold py-2 px-10 transition rounded shadow">
+                    Submit
                 </button>
             </div>
         </div>
