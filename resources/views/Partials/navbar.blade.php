@@ -40,7 +40,7 @@
 
                 <a href="{{ route('oprac') }}"
                     class="text-red-500 font-semibold hover:opacity-80 transition duration-300">Oprec</a>
-                <a href="#"
+                <a href="{{ route('aboutus') }}"
                     class="text-red-500 font-semibold hover:opacity-80 transition duration-300 mr-10">About Us</a>
             </div>
         </div>

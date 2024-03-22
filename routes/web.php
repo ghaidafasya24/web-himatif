@@ -30,15 +30,16 @@ Auth::routes();
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/AboutUs', function () {
-    return view('abousus');
-});
+// Route::get('/AboutUs', function () {
+//     return view('aboutus');
+// });
 // LANDING PAGE
 Route::get('/News', [NewsController::class, 'viewNews'])->name('news');
 Route::get('/Angkatan', [GalleryController::class, 'viewAngkatan'])->name('angkatan');
 Route::get('/Random', [GalleryController::class, 'viewBebas'])->name('bebas');
 Route::get('/ProgramKerja', [GalleryController::class, 'viewProker'])->name('proker');
 Route::get('/Oprec', [OprecController::class, 'viewOprec'])->name('oprac');
+Route::get('/AboutUs', [AboutUsController::class, 'viewAboutUs'])->name('aboutus');
 // Route::get('/Login', [LoginController::class, 'login'])->name('login');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -48,12 +49,22 @@ Route::get('/DashboardAdmin', [DashboardController::class, 'viewDashboard'])->na
 
 // DOCS 
 Route::get('/DataDokumentasiMateri', [DocsController::class, 'viewDokumentasiMateri'])->name('datadokmateri');
+Route::get('/TambahDataDokumentasiMateri', [DocsController::class, 'viewTambahDokumentasiMateri'])->name('tambahdatadokmateri');
+Route::get('/EditDataDokumentasiMateri', [DocsController::class, 'viewEditDokumentasiMateri'])->name('editdatadokmateri');
+Route::get('/DetailDataDokumentasiMateri', [DocsController::class, 'viewDetailDokumentasiMateri'])->name('detaildatadokmateri');
+
+
 Route::get('/DataGallery', [DocsController::class, 'viewGallery'])->name('gallery');
+Route::get('/TambahDataGallery', [DocsController::class, 'viewTambahGallery'])->name('tambahdatagallery');
+Route::get('/EditDataGallery', [DocsController::class, 'viewEditGallery'])->name('editdatagallery');
+Route::get('/DetailDataGallery', [DocsController::class, 'viewDetailGallery'])->name('detaildatagallery');
 
 // NEWS 
-Route::get('/DataBeritaAcara', [NewsController::class, 'viewBeritaAcara'])->name('databeritaacara');
-Route::get('/DataBeritaKegiatan', [NewsController::class, 'viewBeritaKegiatan'])->name('databeritakegiatan');
-Route::get('/DataEvent', [NewsController::class, 'viewEvent'])->name('dataevent');
+Route::get('/DataNews', [NewsController::class, 'viewDataNews'])->name('datanews');
+Route::get('/TambahDataNews', [NewsController::class, 'viewTambah'])->name('tambahdatanews');
+Route::get('/EditDataNews', [NewsController::class, 'viewEdit'])->name('editdatanews');
+Route::get('/DetailDataNews', [NewsController::class, 'viewDetail'])->name('detaildatanews');
+
 
 // MAHASISWA
 Route::get('/DataAnggotaHimpunan', [MahasiswaController::class, 'viewDataAnggota'])->name('dataanggota');

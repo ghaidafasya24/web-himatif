@@ -11,30 +11,13 @@
                 <span class="text-sm">Dashboard</span>
             </a>
         </li>
+
         <li class="mb-1 group">
-            <a href="#"
-                class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100 sidebar-dropdown-toggle">
+            <a href="{{ route('datanews') }}"
+                class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
                 <i class="fa-regular fa-newspaper mr-3 text-lg"></i>
                 <span class="text-sm">News</span>
-                <i class="ri-arrow-right-s-line ml-auto group-[.selected]:rotate-90"></i>
             </a>
-            <ul class="pl-7 mt-2 hidden group-[.selected]:block">
-                <li class="mb-4">
-                    <a href="{{ route('databeritakegiatan') }}"
-                        class="text-gray-300 text-sm flex items-center hover:text-gray-100 before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">
-                        Data Berita Kegiatan</a>
-                </li>
-                {{-- <li class="mb-4">
-                    <a href="{{ route('databeritaacara') }}"
-                        class="text-gray-300 text-sm flex items-center hover:text-gray-100 before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">
-                        Data Berita Acara</a>
-                </li>
-                <li class="mb-4">
-                    <a href="{{ route('dataevent') }}"
-                        class="text-gray-300 text-sm flex items-center hover:text-gray-100 before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">
-                        Data Event</a>
-                </li> --}}
-            </ul>
         </li>
         <li class="mb-1 group">
             <a href="#"

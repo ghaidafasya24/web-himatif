@@ -11,17 +11,22 @@ class NewsController extends Controller
         return view('News.news');
     }
 
-    public function viewBeritaAcara(){
-        return view('Admin.News.berita-acara');
-    }
-    
-    public function viewBeritaKegiatan(){
-        return view('Admin.News.berita-kegiatan');
+    public function viewDataNews(){
+        return view('Admin.News.news');
     }
 
-    public function viewEvent(){
-        return view('Admin.News.event');
+    public function viewTambah(){
+        return view('Admin.News.tambah');
     }
+
+    public function viewEdit(){
+        return view('Admin.News.edit');
+    }
+
+    public function viewDetail(){
+        return view('Admin.News.detail');
+    }
+
 
     
 }

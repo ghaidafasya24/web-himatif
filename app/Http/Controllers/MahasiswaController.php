@@ -8,7 +8,7 @@ class MahasiswaController extends Controller
 {
     public function viewDataOprec()
     {
-        return view('Admin.Mahasiswa.data-oprec');
+        return view('Admin.Mahasiswa.DataOprec.data-oprec');
     }
 
     public function viewDataAnggota()

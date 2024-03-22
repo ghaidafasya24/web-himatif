@@ -7,8 +7,8 @@ use App\Models\AboutUs; // Sesuaikan dengan model yang Anda gunakan untuk entita
 
 class AboutUsController extends Controller
 {
-    public function abousus()
+    public function viewAboutUs()
     {
-        return view('abousus');
+        return view('AboutUs.abousus');
     }
 }
