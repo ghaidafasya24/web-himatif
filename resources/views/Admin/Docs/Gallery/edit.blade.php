@@ -6,7 +6,7 @@
     <div class="block ml-10">
         <div class="flex">
             <i class="fa-regular fa-folder mr-3 text-lg"></i>
-            <p>Edit Gallery</p>
+            <p>Tambah Gallery</p>
         </div>
     </div>
     <div class="mx-10 mt-10">
@@ -26,7 +26,7 @@
             <label class="block uppercase tracking-wide text-gray-700 text-xl font-bold mb-2" for="grid-password">
                 Tanggal Publish
             </label>
-            <input class="hb-32 appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+            <input type="datetime-local" id="Test_DatetimeLocal" class="hb-32 appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
         </div>
         <div class="relative w-full">
             <label class="block uppercase tracking-wide text-gray-700 text-xl font-bold mb-2" for="grid-password">
@@ -44,3 +44,5 @@
         </div>
     </div>
 </div>
+
+@endsection
