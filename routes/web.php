@@ -12,6 +12,7 @@ use App\Http\Controllers\OprecController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
+use App\Http\Controllers\AboutUsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,7 +30,9 @@ Auth::routes();
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('/AboutUs', function () {
+    return view('abousus');
+});
 // LANDING PAGE
 Route::get('/News', [NewsController::class, 'viewNews'])->name('news');
 Route::get('/Angkatan', [GalleryController::class, 'viewAngkatan'])->name('angkatan');
