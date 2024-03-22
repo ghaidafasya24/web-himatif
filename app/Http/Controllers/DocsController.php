@@ -19,6 +19,7 @@ class DocsController extends Controller
         return view('Admin.Docs.DokumentasiMateri.detail');
     }
 
+    
     public function viewGallery(){
         return view('Admin.Docs.Gallery.gallery');
     }
