@@ -2,7 +2,9 @@
 @section('title', 'Tambah Data Gallery')
 @section('content')
 
-    <div class="overflow-x-hidden md:w-[calc(100%-256px)] md:ml-64 pt-16 w-full bg-gray-200 h-screen">
+    <form method="POST" action="{{ route('postdatagallery') }}" enctype="multipart/form-data"
+        class="overflow-x-hidden md:w-[calc(100%-256px)] md:ml-64 pt-16 w-full bg-gray-200 h-screen">
+        @csrf
         <div class="block ml-10">
             <div class="flex">
                 <i class="fa-regular fa-folder mr-3 text-lg"></i>
@@ -50,6 +52,6 @@
                 </button>
             </div>
         </div>
-    </div>
+    </form>
 
 @endsection

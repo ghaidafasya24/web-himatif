@@ -56,6 +56,7 @@ Route::get('/DetailDataDokumentasiMateri', [DocsController::class, 'viewDetailDo
 
 Route::get('/DataGallery', [DocsController::class, 'viewGallery'])->name('gallery');
 Route::get('/TambahDataGallery', [DocsController::class, 'viewTambahGallery'])->name('tambahdatagallery');
+Route::post('/PostDataGallery', [DocsController::class, 'postTambahGallery'])->name('postdatagallery');
 Route::get('/EditDataGallery', [DocsController::class, 'viewEditGallery'])->name('editdatagallery');
 Route::get('/DetailDataGallery', [DocsController::class, 'viewDetailGallery'])->name('detaildatagallery');
 
