@@ -56,7 +56,7 @@
         <!-- Left: Image -->
         <div class="w-1/2 h-screen flex-shrink-0 hidden lg:flex justify-center items-center">
             <img src="assets/img/logo-himatif.png" alt="Placeholder Image"
-                class="object-cover max-h-full border border-white rounded-md">
+                class="object-cover max-h-full border border-white rounded-md w-3/5">
         </div>
         <!-- Right: Login Form -->
         <div class="lg:p-20 md:p-16 sm:12 p-8 w-full lg:w-1/2 flex-grow">
