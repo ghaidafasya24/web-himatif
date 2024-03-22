@@ -30,10 +30,10 @@ Auth::routes();
 Route::get('/', function () {
     return view('welcome');
 });
-
-
+Route::get('/AboutUs', function () {
+    return view('abousus');
+});
 // LANDING PAGE
-Route::get('/about-us/edit', [AboutUsController::class, 'edit'])->name('aboutus.edit');
 Route::get('/News', [NewsController::class, 'viewNews'])->name('news');
 Route::get('/Angkatan', [GalleryController::class, 'viewAngkatan'])->name('angkatan');
 Route::get('/Random', [GalleryController::class, 'viewBebas'])->name('bebas');

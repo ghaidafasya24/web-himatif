@@ -7,12 +7,8 @@ use App\Models\AboutUs; // Sesuaikan dengan model yang Anda gunakan untuk entita
 
 class AboutUsController extends Controller
 {
-    public function edit()
+    public function abousus()
     {
-        $aboutus = AboutUs::first(); // Mengambil data "About Us", misalnya Anda hanya memiliki satu data
-        return view('AboutUs.edit', compact('aboutus'));
+        return view('abousus');
     }
-
-    // Metode lain jika diperlukan
 }
-
