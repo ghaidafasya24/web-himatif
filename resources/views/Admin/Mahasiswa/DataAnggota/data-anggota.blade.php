@@ -8,7 +8,7 @@
                 <i class="fa-regular fa-folder mr-3 text-lg"></i>
                 <p>Data Anggota Himpunan</p>
             </div>
-            <button class="mt-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"><i
+            <button class="mt-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" type="button" type="button" onclick="return window.location.href = '<?php echo route('tambahdataanggota'); ?>';"><i
                     class="fa-solid fa-plus mr-2"></i>Add Anggota Himpunan</button>
         </div>
         <br>
@@ -33,31 +33,20 @@
             <tbody class="bg-white divide-y divide-gray-200">
                 <!-- Data Mahasiswa -->
                 <tr>
-                    <td class="px-6 py-4 whitespace-nowrap">714220007</td>
-                    <td class="px-6 py-4 whitespace-nowrap">Gading Khairlambang</td>
-                    <td class="px-6 py-4 whitespace-nowrap">2A</td>
+                    <td class="px-6 py-4 whitespace-nowrap">714220031</td>
+                    <td class="px-6 py-4 whitespace-nowrap">Ghaida Fasya Yuthika Afifah</td>
+                    <td class="px-6 py-4 whitespace-nowrap">2B</td>
                     <td class="px-6 py-4 whitespace-nowrap">Teknik Informatika</td>
                     <td class="px-6 py-4 whitespace-nowrap">Devteam</td>
                     <td class="px-6 py-4 whitespace-nowrap">
-                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><i
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="button"
+                            onclick="return window.location.href = '<?php echo route('editdataanggota'); ?>';"><i
                                 class="mr-1 fa-solid fa-pen-to-square"></i>Edit</button>
                         <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"><i
                                 class="mr-1 fa-solid fa-trash"></i>Delete</button>
                     </td>
                 </tr>
-                <tr>
-                    <td class="px-6 py-4 whitespace-nowrap">713220031</td>
-                    <td class="px-6 py-4 whitespace-nowrap">Ghaida Fasya</td>
-                    <td class="px-6 py-4 whitespace-nowrap">2B</td>
-                    <td class="px-6 py-4 whitespace-nowrap">Teknik Informatika</td>
-                    <td class="px-6 py-4 whitespace-nowrap">DevTeam</td>
-                    <td class="px-6 py-4 whitespace-nowrap">
-                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><i
-                                class="mr-1 fa-solid fa-pen-to-square"></i>Edit</button>
-                        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"><i
-                                class="mr-1 fa-solid fa-trash"></i>Delete</button>
-                    </td>
-                </tr>
+
                 <!-- Tambahkan baris tambahan sesuai dengan data mahasiswa -->
             </tbody>
         </table>

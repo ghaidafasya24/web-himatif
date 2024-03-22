@@ -8,7 +8,7 @@
             <i class="fa-regular fa-folder mr-3 text-lg"></i>
             <p>Data Berita</p>
         </div>
-        <button class="mt-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" type="button" ; onclick="return window.location.href = '<?php echo route('tambahdatanews'); ?>';">
+        <button class="mt-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" type="button" onclick="return window.location.href = '<?php echo route('tambahdatanews'); ?>';">
             <i class="fa-solid fa-plus mr-2"></i>Add Berita</button>
     </div>
     <div class="ml-4 mr-4">
