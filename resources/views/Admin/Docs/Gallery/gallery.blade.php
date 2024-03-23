@@ -8,6 +8,7 @@
             <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" type="button"
                 onclick="return window.location.href = '<?php echo route('tambahdatagallery'); ?>';">
                 Add Gambar</button>
+                
         </div>
         <div class="ml-4 mr-4">
             <div class="grid grid-cols-3 gap-4">
