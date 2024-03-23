@@ -57,8 +57,10 @@ Route::get('/DetailDataDokumentasiMateri', [DocsController::class, 'viewDetailDo
 Route::get('/DataGallery', [DocsController::class, 'viewGallery'])->name('gallery');
 Route::get('/TambahDataGallery', [DocsController::class, 'viewTambahGallery'])->name('tambahdatagallery');
 Route::post('/PostDataGallery', [DocsController::class, 'postTambahGallery'])->name('postdatagallery');
-Route::get('/EditDataGallery', [DocsController::class, 'viewEditGallery'])->name('editdatagallery');
-Route::get('/DetailDataGallery', [DocsController::class, 'viewDetailGallery'])->name('detaildatagallery');
+Route::get('/EditDataGallery/{id}', [DocsController::class, 'viewEditGallery'])->name('editdatagallery');
+Route::put('/EditDataGalleryPut/{id}', [DocsController::class, 'EditGallery'])->name('puteditdatagallery');
+Route::get('/DetailDataGallery/{id}', [DocsController::class, 'viewDetailGallery'])->name('detaildatagallery');
+Route::delete('/DeleteDataGallery/{id}', [DocsController::class, 'deleteDetailGallery'])->name('deletedatagallery');
 
 // NEWS 
 Route::get('/DataNews', [NewsController::class, 'viewDataNews'])->name('datanews');
