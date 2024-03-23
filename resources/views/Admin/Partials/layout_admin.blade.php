@@ -24,6 +24,8 @@
     @include('Admin.Partials.sidebar_admin')
     @yield('content')
 
+    
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         document.querySelectorAll('.sidebar-dropdown-toggle').forEach(function(item) {
             item.addEventListener('click', function(e) {
@@ -48,6 +50,27 @@
         });
     </script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+
+    @if (session('success'))
+    <script>
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: '{{ session('success') }}',
+            showConfirmButton: false,
+            timer: 1500
+        });
+    </script>
+    @elseif (session('error'))
+    <script>
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: '{{ session('error') }}',
+        })
+    </script> 
+    @endif
+   
 </body>
 
 </html>
