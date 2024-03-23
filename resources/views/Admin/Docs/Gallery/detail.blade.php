@@ -2,7 +2,50 @@
 @section('title', 'Detail Data Gallery')
 @section('content')
 
-<div>
-    <img src="" alt="">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptatum laborum illo. Animi harum numquam exercitationem facere perferendis, eligendi quas suscipit ipsum, eaque perspiciatis asperiores. Ullam fuga accusantium magnam delectus. Nihil doloribus esse porro tempora, architecto tempore ea, voluptatum placeat et asperiores voluptate recusandae obcaecati a eligendi veritatis quaerat tenetur molestias error dicta soluta vitae vero, magnam maxime. Dolor, iusto provident tempore saepe eaque voluptate magnam quibusdam rerum consequatur illum esse consequuntur reiciendis voluptates eius ea, optio qui nihil odit excepturi recusandae quos. Sed totam obcaecati ratione sit. Quia aliquam eaque esse iste laudantium, reiciendis atque consequatur dolor pariatur impedit quidem ullam beatae, deleniti minus necessitatibus voluptatem? Molestiae, maiores? Obcaecati nemo temporibus id, aspernatur, officiis earum iste nostrum voluptates numquam voluptate quasi voluptatibus magnam eligendi a perspiciatis rerum vero sapiente voluptas. Neque et odit consectetur. Distinctio fuga similique accusamus necessitatibus, rem provident saepe excepturi totam labore aliquid aut beatae earum, in iste consequatur, adipisci facilis! In dolore dolor corporis accusamus velit voluptates expedita, beatae deserunt perspiciatis odit quaerat voluptas blanditiis sed accusantium, cumque laudantium itaque veritatis! Eaque quidem ab illo, quaerat harum quia quis animi ex esse necessitatibus! Autem nam culpa, delectus eaque suscipit nemo facilis beatae tempore at vel ab ea eligendi soluta officia, tempora repellat quia iusto accusamus. Illum molestiae, amet, ea unde perspiciatis omnis repellat nostrum beatae enim laboriosam nisi delectus esse dignissimos quaerat sunt consectetur maxime quo quas. Aliquam, nam exercitationem omnis dolores totam amet officiis vero minima nulla perferendis doloremque praesentium deserunt itaque? Iusto doloribus nulla quasi eligendi quo id veniam sint, libero eos molestias, asperiores quos pariatur repellat, mollitia porro delectus minus. Recusandae cum odit, voluptatem officiis ex eveniet architecto cumque beatae rem, eius dicta aspernatur repellendus fuga eum in consectetur rerum provident odio ipsum. Ipsam dignissimos nihil nostrum illum omnis voluptatibus sed commodi sequi molestiae vitae quos, iusto vel fugit voluptate modi assumenda tenetur. Ducimus doloremque qui debitis reprehenderit autem itaque tenetur tempore fugiat numquam sit laborum adipisci, saepe omnis cupiditate ipsa vitae quo eligendi quia ab dolore accusamus? Eveniet atque nostrum ducimus eaque dicta molestias, nihil blanditiis dolorum ab harum dolor ut perferendis dignissimos quam praesentium. Iusto numquam, laborum, explicabo iure corporis sint excepturi distinctio neque fuga expedita nam et, velit soluta porro. Dolorem omnis, praesentium quia quis impedit non quas similique reprehenderit vel pariatur repudiandae quod. Alias pariatur possimus blanditiis cupiditate sint! Blanditiis placeat reprehenderit itaque ratione ullam fuga voluptatibus labore doloremque exercitationem. Quisquam voluptatibus at perferendis ratione aliquam repudiandae aspernatur, unde recusandae odio iste rerum obcaecati, doloribus nam, ea laudantium necessitatibus. Architecto quisquam quis dolor voluptate vero et totam dolorem soluta voluptates necessitatibus similique odio cum corrupti sequi dicta incidunt maxime, perspiciatis odit veritatis? Id dolor consequatur voluptates minima earum voluptatum! Atque eligendi amet minima nihil quo tempora unde enim corporis nemo optio in assumenda debitis reiciendis perspiciatis voluptatum sed hic accusamus possimus distinctio, quasi maxime nulla! Necessitatibus sequi fugit quisquam provident quo in, vero non, temporibus repellendus sint harum corrupti dolorum autem culpa iste dignissimos libero inventore molestias facilis.</p>
-</div>
+    <div class="overflow-x-hidden md:w-[calc(100%-256px)] md:ml-64 pt-16 w-full bg-gray-200 h-screen">
+        <div class="block ml-10">
+            <div class="flex">
+                <i class="fa-regular fa-folder mr-3 text-lg"></i>
+                <p>Detail Gallery</p>
+            </div>
+        </div>
+        <div class="mx-10 mt-10">
+            <div class="relative w-full">
+                <label class="block uppercase tracking-wide text-gray-700 text-xl font-bold mb-2" for="grid-password">
+                    Gambar
+                </label>
+                <img class="fa-solid fa-comment text-gray-500 dark:text-gray-400 text-4xl mb-4 rounded-md"
+                    src="{{ asset('img/gallery/' . $detail->gambar) }}" alt="berita" width="500" />
+            </div>
+            <div class="relative w-full">
+                <label class="block uppercase tracking-wide text-gray-700 text-xl font-bold mb-2" for="grid-password">
+                    Judul Gallery
+                </label>
+                <input disabled value="{{ $detail->judul_gallery }}" name="judul_gallery"
+                    class="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+            </div>
+
+            <div class="relative w-full">
+                <label class="block uppercase tracking-wide text-gray-700 text-xl font-bold mb-2" for="deskripsi">
+                    Deskripsi
+                </label>
+                <textarea disabled name="deskripsi" id="deskripsi"
+                    class="resize-none appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">{{ $detail->deskripsi }}</textarea>
+            </div>
+            <div class="relative w-full">
+                <label class="block uppercase tracking-wide text-gray-700 text-xl font-bold mb-2" for="grid-password">
+                    Tanggal Publish
+                </label>
+                <input disabled value="{{ $detail->tanggal_publish }}" name="tanggal_publish" id="Test_DatetimeLocal"
+                    class="hb-32 appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+            </div>
+
+            <div class="w-full bg-gray-200 mt-36">
+                <button
+                    class="mr-6 bg-blue-500 hover:opacity-80 border-transparant text-white font-semibold py-2 px-10 transition rounded shadow">
+                    Back
+                </button>
+
+            </div>
+        </div>
+    </div>
