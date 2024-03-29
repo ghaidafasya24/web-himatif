@@ -42,10 +42,12 @@
                     id="file_input" type="file">
             </div>
             <div class="w-full bg-gray-200 mt-36">
-                <button
+                <a href="#">
+                    <button
                     class="mr-6 bg-blue-500 hover:opacity-80 border-transparant text-white font-semibold py-2 px-10 transition rounded shadow">
                     Back
-                </button>
+                    </button>
+                </a>
                 <button
                     class="bg-green-400 hover:opacity-80 border-transparant font-semibold py-2 px-10 transition rounded shadow">
                     Submit
