@@ -47,7 +47,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 // ADMIN
 Route::get('/DashboardAdmin', [DashboardController::class, 'viewDashboard'])->name('dashboard');
 
-// DOCS 
+// DOCS
 Route::get('/DataDokumentasiMateri', [DocsController::class, 'viewDokumentasiMateri'])->name('datadokmateri');
 Route::get('/TambahDataDokumentasiMateri', [DocsController::class, 'viewTambahDokumentasiMateri'])->name('tambahdatadokmateri');
 Route::get('/EditDataDokumentasiMateri', [DocsController::class, 'viewEditDokumentasiMateri'])->name('editdatadokmateri');
@@ -62,9 +62,10 @@ Route::put('/EditDataGalleryPut/{id}', [DocsController::class, 'EditGallery'])->
 Route::get('/DetailDataGallery/{id}', [DocsController::class, 'viewDetailGallery'])->name('detaildatagallery');
 Route::delete('/DeleteDataGallery/{id}', [DocsController::class, 'deleteDetailGallery'])->name('deletedatagallery');
 
-// NEWS 
+// NEWS
 Route::get('/DataNews', [NewsController::class, 'viewDataNews'])->name('datanews');
 Route::get('/TambahDataNews', [NewsController::class, 'viewTambah'])->name('tambahdatanews');
+Route::post('/PostDataNews', [NewsController::class, 'postTambahNews'])->name('postdatanews');
 Route::get('/EditDataNews', [NewsController::class, 'viewEdit'])->name('editdatanews');
 Route::get('/DetailDataNews', [NewsController::class, 'viewDetail'])->name('detaildatanews');
 
