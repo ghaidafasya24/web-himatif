@@ -27,6 +27,7 @@ class MahasiswaController extends Controller
 
     public function viewTambahDataAnggota()
     {
+
         return view('Admin.Mahasiswa.DataAnggota.tambah');
     }
 

@@ -3,9 +3,10 @@
 @section('content')
 
 <div class="overflow-x-hidden md:w-[calc(100%-256px)] md:ml-64 pt-16 w-full bg-gray-200 h-screen">
-    <form class="mx-auto max-w-lg">
-        <div class="flex flex-col text-center w-full">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Open Requitment</h1>
+    <form class="pt-28 mx-auto max-w-lg" method="post" action="/TambahDataAnggotaHimpunan" enctype="multipart/form-data">
+        @csrf
+        <div class=" flex flex-col text-center w-full">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Open Reqruitment</h1>
         </div>
         <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama Lengkap</label>
         <div class="flex">
@@ -14,14 +15,24 @@
                     <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z" />
                 </svg>
             </span>
-            <input type="text" class="rounded-none rounded-e-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-gray-500 focus:border-gray-500 block flex-1 min-w-0 w-full text-sm p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500" placeholder="Nama Lengkap">
+            <input type="text" id="nama_lengkap" name="nama_lengkap" class="rounded-none rounded-e-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-gray-500 focus:border-gray-500 block flex-1 min-w-0 w-full text-sm p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500 @error('nama_lengkap') is-invalid @enderror" required value="{{ old('nama_lengkap') }}" placeholder="Nama Lengkap">
+            @error('nama_lengkap')
+            <div class="invalid-feedback">
+                bidang nama lengkap harus di isi!!
+            </div>
+            @enderror
         </div>
         <label class="mt-2 block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nomor Telepon</label>
         <div class="flex">
             <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-e-0 border-gray-300 rounded-s-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
                 <i class="fa-solid fa-phone text-gray-500 dark:text-gray-400"></i>
             </span>
-            <input type="number" class="rounded-none rounded-e-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-gray-500 focus:border-gray-500 block flex-1 min-w-0 w-full text-sm p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500" placeholder="Nomor Telepon">
+            <input type="number" id="nomor_telepon" name="nomor_telepon" class="rounded-none rounded-e-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-gray-500 focus:border-gray-500 block flex-1 min-w-0 w-full text-sm p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500 @error('nomor_telepon') is-invalid @enderror" required value="{{ old('npm') }}" placeholder="Nomor Telepon">
+            @error('nomor_telepon')
+            <div class="invalid-feedback">
+                bidang nomor telepon lengkap harus di isi!!
+            </div>
+            @enderror
         </div>
         <div class="flex pt-2">
             <div class="w-full pr-2">
@@ -33,11 +44,16 @@
                             <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z" />
                         </svg>
                     </span>
-                    <input type="number" class="rounded-none rounded-e-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-gray-500 focus:border-gray-500 block flex-1 min-w-0 w-full text-sm p-2.5 pr-6 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500" placeholder="NPM">
+                    <input type="number" id="npm" name="npm" class="rounded-none rounded-e-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-gray-500 focus:border-gray-500 block flex-1 min-w-0 w-full text-sm p-2.5 pr-6 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500 @error('npm') is-invalid @enderror" required value="{{ old('npm') }}" placeholder="NPM">
+                    @error('npm')
+                    <div class="invalid-feedback">
+                        bidang NPM lengkap harus di isi!!
+                    </div>
+                    @enderror
                 </div>
             </div>
             <div class="w-full pl-2">
-                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white flex items-center">Kelas</label>
+                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white flex items-center" for="kelas">Kelas</label>
                 <div class="flex">
                     <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-e-0 border-gray-300 rounded-s-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
@@ -45,14 +61,14 @@
                             <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z" />
                         </svg>
                     </span>
-                    <select id="kelas-select" class="rounded-none rounded-e-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-gray-500 focus:border-gray-500 block flex-1 min-w-0 w-full text-sm p-2.5 pr-6  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500">
+                    <select name="jurusan" id="jurusan" class="rounded-none rounded-e-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-gray-500 focus:border-gray-500 block flex-1 min-w-0 w-full text-sm p-2.5 pr-6  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500">
                         <option class="py-2" disabled selected>Pilih Kelas</option>
                         <option value="inti" class="py-2">D3 Teknik Informatika</option>
                         <option value="humas" class="py-2">D4 Teknik Informatika</option>
                     </select>
                     {{-- <input type="text"
-                            class="rounded-none rounded-e-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-gray-500 focus:border-gray-500 block flex-1 min-w-0 w-full text-sm p-2.5 pr-6 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500"
-                            placeholder="ex: D4 Teknik Informatika - 2B"> --}}
+                        class="rounded-none rounded-e-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-gray-500 focus:border-gray-500 block flex-1 min-w-0 w-full text-sm p-2.5 pr-6 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500"
+                        placeholder="ex: D4 Teknik Informatika - 2B"> --}}
                 </div>
             </div>
         </div>
@@ -61,11 +77,16 @@
             <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-e-0 border-gray-300 rounded-s-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
                 <i class="fa-solid fa-comment text-gray-500 dark:text-gray-400 scale-x-[-1]"></i>
             </span>
-            <input type="text" class="rounded-none rounded-e-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-gray-500 focus:border-gray-500 block flex-1 min-w-0 w-full text-sm p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500" placeholder="Alasan Masuk Himatif">
+            <input type="textarea" id="alasan" name="alasan" class="rounded-none rounded-e-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-gray-500 focus:border-gray-500 block flex-1 min-w-0 w-full text-sm p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500 @error('alasan') is-invalid @enderror" required value="{{ old('alasan') }}" placeholder="Alasan Masuk Himatif">
+            @error('alasan masuk Himatif')
+            <div class="invalid-feedback">
+                bidang alasan masuk Himatif harus di isi!!
+            </div>
+            @enderror
         </div>
         <div class="mb-4 mt-4">
             <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pilih Divisi</label>
-            <select id="division-select" class="border p-2 rounded-md w-full border-gray-300 focus:border-gray-500 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-gray-500 dark:focus:border-gray-500">
+            <select name="divisi" id="divisi" class="border p-2 rounded-md w-full border-gray-300 focus:border-gray-500 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-gray-500 dark:focus:border-gray-500">
                 <option class="py-2" disabled selected>Pilih Divisi</option>
                 <option value="inti" class="py-2">Inti</option>
                 <option value="humas" class="py-2">Humas</option>
@@ -85,15 +106,19 @@
                         <span class="text-blue-600 underline">browse</span>
                     </span>
                 </span>
-                <input type="file" name="file_upload" class="hidden">
+                <input type="file" name="cv" id="cv" class="@error('image') is-invalid @enderror hidden">
+                @error('cv')
+                <div class="invalid-feedback">
+                    bidang cv lengkap harus di isi!!
+                </div>
+                @enderror
             </label>
         </div>
         <div class="mt-4 flex justify-end">
-            <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded-xl shadow">
+            <button type="submit" class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded-xl shadow">
                 Submit
             </button>
         </div>
     </form>
-</div>
 
-@endsection
+    @endsection
