@@ -67,7 +67,7 @@ Route::get('/DataNews', [NewsController::class, 'viewDataNews'])->name('datanews
 Route::get('/TambahDataNews', [NewsController::class, 'viewTambah'])->name('tambahdatanews');
 Route::post('/PostDataNews', [NewsController::class, 'postTambahNews'])->name('postdatanews');
 Route::get('/EditDataNews', [NewsController::class, 'viewEdit'])->name('editdatanews');
-Route::get('/DetailDataNews', [NewsController::class, 'viewDetail'])->name('detaildatanews');
+Route::get('/DetailDataNews/{id}', [NewsController::class, 'viewDetail'])->name('detaildatanews');
 
 
 // MAHASISWA

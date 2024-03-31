@@ -9,7 +9,9 @@ use Spatie\FlareClient\View;
 class NewsController extends Controller
 {
     public function viewNews(){
-        return view('News.news');
+        $latestNews = News::latest()->first();
+        $news = News::all()->except($latestNews->id);
+        return view('News.news', compact('latestNews', 'news'));
     }
 
     public function viewDataNews(){
@@ -25,8 +27,9 @@ class NewsController extends Controller
         return view('Admin.News.edit');
     }
 
-    public function viewDetail(){
-        return view('Admin.News.detail');
+    public function viewDetail($id){
+        $detail = News::findOrFail($id);
+        return view('Admin.News.detail', compact('detail'));
     }
 
     public function postTambahNews(Request $request)
