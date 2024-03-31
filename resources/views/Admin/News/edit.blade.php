@@ -23,7 +23,7 @@
             <label class="block uppercase tracking-wide text-gray-700 text-xl font-bold mb-2" for="deskripsi">
                 Deskripsi
             </label>
-            <textarea id="deskripsi" name="deskripsi" value="{{ $news->deskripsi }}" class="h-40 resize-none appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"></textarea>
+            <textarea id="deskripsi" name="deskripsi" value="" class="h-40 resize-none appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">{{ $news->deskripsi }}</textarea>
         </div>
         <div class="relative w-full">
             <label class="block uppercase tracking-wide text-gray-700 text-xl font-bold mb-2" for="grid-password">

@@ -28,7 +28,11 @@
                         <div class="mt-2 flex justify-evenly gap-4">
                             <a href="{{ route('detaildatanews', $item->id) }}" class="bg-blue-500 text-white font-semibold py-1 px-3 border border-blue-500 rounded-lg shadow">Detail</a>
                             <a href="{{ route('editdatanews', $item->id) }}" class="bg-yellow-500 text-white font-semibold py-1 px-3 border border-yellow-500 rounded-lg shadow">Edit</a>
-                            <a href="" class="bg-red-500 text-white font-semibold py-1 px-3 border border-red-500 rounded-lg shadow">Delete</a>
+                           <form action="{{route('deletedatanews', $item->id)}}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="bg-red-500 text-white font-semibold py-1 px-3 border border-red-500 rounded-lg shadow">Delete</button>
+                           </form>
                         </div>
                     </div>
                 </div>

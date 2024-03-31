@@ -94,4 +94,17 @@ class NewsController extends Controller
         $news->update($newsData);
         return redirect()->route('datanews')->with('success', 'news added successfully.');
     }
+
+    public function deleteNews($id)
+    {
+        $news = News::findOrFail($id);
+
+        if ($news->gambar) {
+            Storage::delete('img/news/' . $news->gambar);
+        }
+
+        $news->delete();
+
+        return redirect()->route('datanews')->with('success', 'news deleted successfully.');
+    }
 }
