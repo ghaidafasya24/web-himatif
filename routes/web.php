@@ -66,7 +66,8 @@ Route::delete('/DeleteDataGallery/{id}', [DocsController::class, 'deleteDetailGa
 Route::get('/DataNews', [NewsController::class, 'viewDataNews'])->name('datanews');
 Route::get('/TambahDataNews', [NewsController::class, 'viewTambah'])->name('tambahdatanews');
 Route::post('/PostDataNews', [NewsController::class, 'postTambahNews'])->name('postdatanews');
-Route::get('/EditDataNews', [NewsController::class, 'viewEdit'])->name('editdatanews');
+Route::get('/EditDataNews/{id}', [NewsController::class, 'viewEdit'])->name('editdatanews');
+Route::put('/UpdateDataNews/{id}', [NewsController::class, 'updateNews'])->name('updatedatanews');
 Route::get('/DetailDataNews', [NewsController::class, 'viewDetail'])->name('detaildatanews');
 
 
